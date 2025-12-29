@@ -1,0 +1,43 @@
+/* ===== SLIDER FOTO ===== */
+.slider-section {
+  padding: 10px 20px 30px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Animasi slider */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  35% { transform: translateX(-100%); }
+  65% { transform: translateX(-100%); }
+  70% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+
+/* ===== ANIMASI SCROLL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
